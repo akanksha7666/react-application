@@ -1,5 +1,3 @@
-bash '''
-
 git init
 
 git add . 
@@ -18,4 +16,3 @@ git push -u origin master
 username: Prathm0025
 
 password :   token 
-'''
