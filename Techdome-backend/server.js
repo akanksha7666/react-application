@@ -7,7 +7,7 @@ const multer = require('multer');
 const cloudinary = require('cloudinary');
 
 dotenv.config();
-const port = process.env.PORT;
+
 
 
 ////////------ cloudinary -------//////////
@@ -44,6 +44,7 @@ app.post("/", (req, res) => {
     console.log(JSON.stringify(req.body, 0, 2));
     res.status("200").send(req.body)
 })
+const port = process.env.PORT || 5000;
 
 app.listen(port, () => {
     console.log(`listening at port ${port}`)
